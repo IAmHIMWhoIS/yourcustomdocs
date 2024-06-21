@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <style>
+    
+      .resume {
+        width: 210mm;
+        height: auto;
+        align-items: top;
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(51, 51, 51);
+        border: 4px solid rgb(28, 182, 243);
+        overflow: auto;
+      }
+    
+      .insidecont {
+        width: 100wh;
+        height: 100%;
+        background-color: #1e1e1e; /* Dark theme background color */
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        overflow: hidden;
+        border: none;
+        padding: 20px;
+  
+      }
+    
+      /* Update the text color for headings and text */
+      h3, t {
+        color: white;
+      }
+
+        /* Apply styles to the Abme div (the content) */
+        .Abme {
+            
+            flex: 1; /* Expand to fill remaining height */
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+        }        
+
+        /* Apply styles to the Profile picture */
+
+       /* */
+        .Upper{
+            background-color: rgb(51, 51, 51);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .Education_cont, .Work-container,.Language_cont,.Skills-cont,.Project-cont,.Publications-cont{
+            width: 100%;
+            height: auto;
+            border-bottom:  1px solid rgb(94, 94, 94);
+            
+        }
+        .Edu,.Work,.Lan,.Skills,.Projects{
+            padding: 10px;
+        }
+        .LS{
+            margin-left: 10px;
+        }
+        .MT{
+            width: 100%;
+            border-bottom:  1px solid rgb(158, 158, 158);  
+            margin: 0;
+            padding: 0;
+        }
+        .name {
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 20px;
+          color: rgb(155, 89, 182);
+          font-weight: bold; /* Add this line to make the text bold */
+          padding: 10px;
+          }
+
+          .info1 {
+           display: flex;
+           padding: 7px;
+         }
+
+/* Add margin-right to create spacing between items */
+        .info1 t {
+          margin-right: 10px;
+        }
+        .info2{
+            display: flex;
+            flex-direction: row;
+            padding: 7px;
+        }
+        .info2 t {
+          margin-right: 10px;
+        }
+        .Address{
+            padding: 10px;
+            margin-left: 10px;
+        }
+        .spacer{
+            display: flex;
+            flex-direction: column;
+            margin-top: 7px;
+            margin-left: 7px;
+            width: 100%;
+            align-items: start;
+        }
+        .spacer t {
+            margin-top: 10px;
+        }
+        .prof{
+            width: 100%;
+            align-items: start;
+            display: flex;
+        }
+       #para{
+        color: rgb(232, 196, 0);
+        font-family: inherit;
+        padding: 5px;
+       }
+       .maroonish-color {
+          color: rgb(230, 153, 0); /* Adjust the color code to the maroonish color you want */
+          /* Any other styles you want to apply */
+          padding: 5px;
+        }
+        .adres{
+          margin-bottom: 14px;
+        }
+        #Name{
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          
+        }
+        .idg{
+          display: flex;
+          flex-direction: row;
+        }
+        .Education{
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 15px;
+        }
+        .Skills{
+          display: flex;
+          flex-direction: row;
+        }
+
+    </style>
+</head>
+<body>
+ 
+    <div class="resume" id="resume">
+ 
+        <div class="Upper">
+           <div>
+            [ProfilePic]
+            </div>
+            <div class="Abme">
+               <div class="prof">
+               <t>[Name]</t> </div>
+               <div class="info1">
+               <t class="nationality" id="para">Nationality:</t> <t class="maroonish-color">[Nationality]</t>
+               <t class="DOB" id="para">Date of Birth: </t><t class="maroonish-color"></t><t>[DateOfBirth]</t>
+               <t class="gender" id="para"> Gender: </t> <t class="maroonish-color">[Gender]</t></div>
+             <div class="info2"><t class="phone-number" id="para">Contact Number: </t> <t class="maroonish-color">[PhoneNumber]</t>
+             <t class="email" id="para">Email Address: </t> <t class="maroonish-color">[EmailAddress]</t></div>
+             <div class="spacer">
+               <div class="adres"><t class="address" id="para"> Address: </t>  <t class="maroonish-color">[Address]</t></div>
+               <div><t class="AbtMe" id="para">About Me: </t> <t class="maroonish-color">[AbtMe]</t></div></div>
+            
+            </div>
+    
+        </div>
+        <div class="insidecont" id="below">
+
+        <div class="Education_cont">
+            <div><h3 class="LS">Education and Training</h3></div>
+            <div class="MT"></div>
+            <div class="Edu">
+               [Education]
+             </div>
+        </div>
+
+        <div class="Work-container">
+            <div><h3 class="LS">Work Experience</h3></div>
+            <div class="MT"></div>
+             <div class="Work">
+                [WorkExp]
+              </div>
+         </div>
+
+         <div class="Language_cont">
+            <div><h3 class="LS">Language Skills</h3></div>
+            <div class="MT"></div>
+            <div class="Lan">
+               [Languages]
+             </div>
+        </div>
+        
+        <div class="Skills-cont">
+            <div><h3 class="LS">Other Skills</h3></div>
+            <div class="MT"></div>
+             <div class="Skills">
+              Skills={
+                [Skills]
+              }
+              </div>
+         </div>
+                 
+        <div class="Project-cont">
+            <div><h3 class="LS">Projects</h3></div>
+            <div class="MT"></div>
+            <div class="Projects">
+               [Projects]
+             </div>
+        </div>
+
+        <div class="Publications-cont">
+          <div><h3 class="LS">Publications</h3></div>
+          <div class="MT"></div>
+          <div class="Publications">
+             [Publications]
+           </div>
+      </div>
+
+        <div class="Empty-cont">
+          <div class="MT"></div>
+          <div class="Extra">
+             [Extra]
+           </div>
+      </div>
+
+
+    </div>
+    </div>
+ 
+
+
+</body>
+</html>
