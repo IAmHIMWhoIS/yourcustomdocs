@@ -20,7 +20,7 @@ function App() {
     <div className='BelowNav'>
       <Routes>
         <Route key="home" path="/" element={<Home />} /> 
-        <Route key="home" path="/yourcustomdocs" element={<Home />} />     
+        <Route key="home" path="/home" element={<Home />} />     
         <Route key="creator" path="/Creator" element={<Creator />} />     
         <Route key="cover" path="/Cover" element={<Cover />} /> 
         <Route key="privacy" path="/Privacy" element={<Privacy />} />     
