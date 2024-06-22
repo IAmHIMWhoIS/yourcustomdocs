@@ -8,6 +8,7 @@ import { FaYoutube,FaTwitter,FaFacebook,FaInstagram } from 'react-icons/fa';
 import Search from '../Images/l3.PNG'
 export default function Home(){
     const navigate = useNavigate();
+    
     const resume=(event)=>{
         event.preventDefault();
         navigate('/Creator');
@@ -45,7 +46,7 @@ export default function Home(){
             <div style={{ backgroundImage: `url(${Fabula})` }} className="FImage1"></div>
         <div className="Top1text">
             <h2>Create Custom Cirriculum Vitalae and Cover Letters</h2>
-            <t>100% free and easy to use</t>
+            <p>100% free and easy to use</p>
         </div>
         </div>
       <div className="boxcont">
@@ -60,7 +61,7 @@ export default function Home(){
      <div className="Top2_text">
         <div className="Top1text">
             <h2>Just add your details and work the magic</h2>
-            <t className="parat">Our user friendly tool will help you in creating any type of CV and Cover Letter you can imagine, with the variety of options we provide you are sure to catch the eye of job providers all around the world</t>
+            <p className="parat">Our user friendly tool will help you in creating any type of CV and Cover Letter you can imagine, with the variety of options we provide you are sure to catch the eye of job providers all around the world</p>
         </div>
         <div style={{ backgroundImage: `url(${Search})` }} className="FImage2"></div>
     
