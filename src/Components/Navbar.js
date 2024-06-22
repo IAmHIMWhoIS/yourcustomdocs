@@ -32,9 +32,9 @@ return (
      <h2 href="/" 
       onClick={(e) => {
       e.preventDefault();
-      window.location.href='/';
+      window.location.href='/yourcustomdocs';
       }} 
-     className = "SiteTitle">Custom Docs</h2>
+     className = "SiteTitle">YourCustomDocs</h2>
             
       <h4 className="NavBut3" onClick={templates}>Templates</h4>
 
