@@ -27,7 +27,7 @@ export default function Home(){
                 } 
      const faqs=(event)=>{
        event.preventDefault();
-       //
+       navigate('/FAQs');
            } 
                                      
        
@@ -36,8 +36,11 @@ export default function Home(){
         navigate('/Cover');
             }  
         const toaster = ()=>{
-            toast.info("Coming Soon!")
+            toast.info("Coming Soon")
             }
+        const toaster2 = (e)=>{
+          toast.info("Sorry Boo Not Yet")
+          }    
                 
     return(
     <div className="HomeMain">
@@ -89,7 +92,7 @@ export default function Home(){
 
   <div className="row">
     <ul className="liststyle">
-    <li onClick={(e) => contact(e)}><a href="/contact">Contact us</a></li>
+    <li onClick={(e) => toaster2(e)}><a>Contact us</a></li>
     <li onClick={(e) => privacy(e)}><a href="/privacy">Privacy Policy</a></li>
     <li onClick={(e) => terms(e)}><a href="/terms">Terms &amp; Conditions</a></li>
     <li onClick={(e) => faqs(e)}><a href="/faqs">FAQs</a></li>

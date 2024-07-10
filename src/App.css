@@ -1,5 +1,11 @@
 
-
+p{
+  margin: 1px 4px;
+}
+.idg{
+  display: flex;
+  flex-direction: row;
+}
 .BelowNav{
   min-height: 100vh;
   width: 100%;
@@ -489,17 +495,24 @@ margin-right: 10px;
   padding: 3px;
 }
 
-
-
   .adres1,.adres{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
     margin-bottom: 14px;
     margin-top: 5px;
   }
   .adress{
     margin-bottom: 14px;
-    
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
   }
- 
+ #AbtMe{
+  display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+ }
   .color-circle:hover, .color-circle1:hover, .color-circle2:hover, .color-circle3:hover
   , .color-circle4:hover, .color-circle5:hover, .color-circle6:hover,
   .color-circle7:hover, .color-circle8:hover, .color-circle9:hover,.color-circle10:hover
@@ -548,6 +561,7 @@ margin-right: 10px;
     text-decoration: underline;
     word-wrap: break-word;
     word-break: break-all;
+    padding: 0px;
   }
   .high{
     padding-left: 10px;
@@ -1183,3 +1197,92 @@ flex-direction: column;
   padding: 4px 0px;
 }
 
+.faq-container {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  margin: 40px auto;
+  padding: 30px 40px;
+  max-width: 850px;
+}
+
+.faqh1 {
+  font-size: 36px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.faqh2 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+
+.faqp {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.faqp:last-child {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .HomeMain {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .FImage1{
+    width: 100%;
+    height: 180px;
+    margin: 10px;
+    margin-top: 20px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  .FImage2{
+    width: 210%;
+    height: 170px;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  .SiteTitle{
+    font-size: medium;
+  }
+  .NavBut3{
+    font-size: 13px;
+  }
+
+  .Top1,.footer {
+    width: 100%;
+  }
+.boxcont{
+  width: 90%;
+}
+.Top2_text{
+  display: flex;
+  align-items: center;
+  margin: 10px 30px;
+  padding: 0px 10px;
+  width: 90%;
+}
+  .Homeboxbut {
+    flex-direction: column;
+  }
+
+  .CLPic, .CVPic {
+    margin: 10px 10px;
+  }
+}

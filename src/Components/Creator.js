@@ -1432,17 +1432,17 @@ function returnDiv (){
 
             <div className="Abme">
                <div className="prof">
-               <text className="name" style={{fontSize:S2+ 'px'}}></text> </div>
+               <p className="name" style={{fontSize:S2+ 'px'}}></p> </div>
                <div className="info1">
-               <text id="nationality" className="parah1" >Nationality:</text> <text  id="Nation" className="parap1" ></text>
-               <text id="DOB" className="parah1" >Date of Birth: </text><text  id="Birth" className="parap1"  ></text>
-               <text id="gender" className="parah1" > Gender: </text> <text  id="Sex" className="parap1"></text></div>
-             <div className="info2"><text id="phone-number" className="parah1" >Contact: </text> <text  id="Phn" className="parap1"></text>
-             <text id="email" className="parah1" >Email Address: </text> <text  className="link"  id="mail" ></text></div>
+               <p id="nationality" className="parah1" >Nationality:</p> <p  id="Nation" className="parap1" ></p>
+               <p id="DOB" className="parah1" >Date of Birth: </p><p  id="Birth" className="parap1"  ></p>
+               <p id="gender" className="parah1" > Gender: </p> <p  id="Sex" className="parap1"></p></div>
+             <div className="info2"><p id="phone-number" className="parah1" >Contact: </p> <p  id="Phn" className="parap1"></p>
+             <p id="email" className="parah1" >Email Address: </p> <p  className="link"  id="mail" ></p></div>
              <div className="spacer">
-               <div className="adres"><text id="address" className="parah1" > Address: </text>  <text id="pata" className="parap1"></text></div>
-               <div className="adress"><text className="parah1" > LinkedIn Profile: </text>  <text id="linker" className="linkedIn"></text></div>
-               <div><text id="AbtMe" className="parah1" >About Me: </text> <text  id="aboutMe" className="parap1"></text></div></div>
+               <div className="adres"><p id="address" className="parah1" > Address: </p>  <p id="pata" className="parap1"></p></div>
+               <div className="adress"><p className="parah1" > LinkedIn Profile: </p>  <p id="linker" className="linkedIn"></p></div>
+               <div id="AbtMe" ><p className="parah1" >About Me: </p> <p  id="aboutMe" className="parap1"></p></div></div>
             
             </div>
     
@@ -1567,17 +1567,17 @@ async function appendonP2(from,type) {
       const edu2h = edu2.map((edu, index) => `
       <div class="Education" id="Education">
       <div class="degreename">
-      <text class="subH" id="DName"  style={{ fontSize: '${S4}px' }}>${edu.degreeName}</text> </div>
+      <p class="subH" id="DName"  style={{ fontSize: '${S4}px' }}>${edu.degreeName}</p> </div>
       <div id="idg">
-      <text id="institute" class="S6"  style={{ fontSize: '${S6}px' }}>${edu.institution}</text>
-      <text class="S5" style={{ fontSize: '${S5}px' }}>[${edu.duration}]</text>
+      <p id="institute" class="S6"  style={{ fontSize: '${S6}px' }}>${edu.institution}</p>
+      <p class="S5" style={{ fontSize: '${S5}px' }}>[${edu.duration}]</p>
         </div>
-      <div class="idg"><text class="subH"  style={{ fontSize: '${S4}px' }}><strong>Address:</strong> </text> <text class="S5" style={{ fontSize: '${S5}px' }}>${edu.address}</text> </div>
-      <div class="idg"><text class="subH" style={{ fontSize: '${S4}px' }}><strong>Website:</strong> </text><text class="linker" id="linker" style={{ fontSize: '${S5}px'}}>${edu.website}</text> </div>
-      <div class="high"><div class="BaddText">&#8226;</div><text class="subH" style={{ fontSize: '${S5}px'}}>${edu.addText1}</text> </div>
-      <div class="high"><div class="BaddText">&#8226;</div><text class="subH" style={{ fontSize: '${S5}px'}}>${edu.addText2}</text> </div>
-      <div class="high"><div class="BaddText">&#8226;</div><text class="subH" style={{ fontSize: '${S5}px'}}>${edu.addText2}</text> </div>
-      <div class="idg"><text class="subH"  style={{ fontSize: '${S5}px'}}>${edu.addBold}</text> </div>
+      <div class="idg"><p class="subH"  style={{ fontSize: '${S4}px' }}><strong>Address:</strong> </p> <p class="S5" style={{ fontSize: '${S5}px' }}>${edu.address}</p> </div>
+      <div class="idg"><p class="subH" style={{ fontSize: '${S4}px' }}><strong>Website:</strong> </p><p class="linker" id="linker" style={{ fontSize: '${S5}px'}}>${edu.website}</p> </div>
+      <div class="high"><div class="BaddText">&#8226;</div><p class="subH" style={{ fontSize: '${S5}px'}}>${edu.addText1}</p> </div>
+      <div class="high"><div class="BaddText">&#8226;</div><p class="subH" style={{ fontSize: '${S5}px'}}>${edu.addText2}</p> </div>
+      <div class="high"><div class="BaddText">&#8226;</div><p class="subH" style={{ fontSize: '${S5}px'}}>${edu.addText2}</p> </div>
+      <div class="idg"><p class="subH"  style={{ fontSize: '${S5}px'}}>${edu.addBold}</p> </div>
       </div>`
      );
       if(pageDivsArray2.length === 0){
@@ -1610,13 +1610,13 @@ async function appendonP2(from,type) {
         }
         const Job2Html = work22.map((exp, index) => `
         <div id="Job" class="Job">
-          <text id="jobTitle" class="subH" style={{ fontSize: '${S4}px' }}>${exp.jobTitle}</text>
+          <p id="jobTitle" class="subH" style={{ fontSize: '${S4}px' }}>${exp.jobTitle}</p>
           <div id="idg">
-          <text id="institute" class="S6" style={{ fontSize: '${S6}px' }}>${exp.company}</text>
-          <text id="Duration" class="S5"  style={{ fontSize: '${S5}px' }}>[${exp.duration}]</text>
+          <p id="institute" class="S6" style={{ fontSize: '${S6}px' }}>${exp.company}</p>
+          <p id="Duration" class="S5"  style={{ fontSize: '${S5}px' }}>[${exp.duration}]</p>
           </div>
-          <div class="idg"><text class="subH"  style={{ fontSize: '${S4}px' }}><strong>Location:</strong> </text><text id="Country" class="S5" style={{ fontSize: '${S5}px' }}>${exp.country}</text></div>
-          <text id="Description" class="S5"style={{ fontSize: '${S5}px' }}>${exp.description}</text>
+          <div class="idg"><p class="subH"  style={{ fontSize: '${S4}px' }}><strong>Location:</strong> </p><p id="Country" class="S5" style={{ fontSize: '${S5}px' }}>${exp.country}</p></div>
+          <p id="Description" class="S5"style={{ fontSize: '${S5}px' }}>${exp.description}</p>
         </div>`
       );
       if(pageDivsArray2.length === 0){
@@ -1653,11 +1653,11 @@ async function appendonP2(from,type) {
         const language = parts[0].trim();
         const proficiency = parts[1].replace(')', '').trim();
     
-        // Create the HTML structure with language and proficiency in separate <t> elements
+        // Create the HTML structure with language and proficiency in separate <p> elements
         return `
           <div id="idg">
-            <t id="bold" class="subH" style={{ fontSize: '${S4}px' }}>${language}</t>
-            <t class="S5" style={{ fontSize: '${S5}px' }}>(${proficiency})</t>
+            <p id="bold" class="subH" style={{ fontSize: '${S4}px' }}>${language}</p>
+            <p class="S5" style={{ fontSize: '${S5}px' }}>(${proficiency})</p>
           </div>
         `;
        
@@ -1681,7 +1681,7 @@ async function appendonP2(from,type) {
           // Check if the current skill is the last item in the array
           const isLastSkill = index === skills.length - 1;
         
-          // Create the HTML structure with or without the <text>/ </text> part based on the threshold
+          // Create the HTML structure with or without the <p>/ </p> part based on the threshold
           if (isLastSkill) {
             return `
               <div class="skill-box">
@@ -1709,7 +1709,7 @@ async function appendonP2(from,type) {
           // Check if the current skill is the last item in the array
           const isLastSkill = index === IPskills.length - 1;
         
-          // Create the HTML structure with or without the <text>/ </text> part based on the threshold
+          // Create the HTML structure with or without the <p>/ </p> part based on the threshold
           if (isLastSkill) {
             return `
               <div class="skill-box">
@@ -1753,10 +1753,10 @@ async function appendonP2(from,type) {
           return `
                <div id="Proj" class="Proj">
                    <div id="idg">
-                       <text id="jobTitle" class="subH" style={{ fontSize: '${S4}px' }}>${pro.Title}</text>
-                       ${pro.duration !== '' ? `<text id="Duration" class="S5" style={{ fontSize: '${S5}px' }}>[${pro.duration}]</text>` : ''}
+                       <p id="jobTitle" class="subH" style={{ fontSize: '${S4}px' }}>${pro.Title}</p>
+                       ${pro.duration !== '' ? `<p id="Duration" class="S5" style={{ fontSize: '${S5}px' }}>[${pro.duration}]</p>` : ''}
                     </div>
-                   <text id="Description" class="S5" style={{ fontSize: '${S5}px' }}>${pro.description}</text>
+                   <p id="Description" class="S5" style={{ fontSize: '${S5}px' }}>${pro.description}</p>
                </div>
            `;
        });
@@ -1830,25 +1830,25 @@ async function updateTemplate(from,type) {
       const educationHtml = educationalBackground.map((edu, index) => `
       <div class="Education" id="Education">
           <div class="degreename">
-              <text class="subH" id="DName" >${edu.degreeName}</text>
+              <p class="subH" id="DName" >${edu.degreeName}</p>
           </div>
           <div id="idg">
-              <text id="institute" class="S6" >${edu.institution}</text>
-              ${edu.duration !== '' ? `<text class="S5">[${edu.duration}]</text>` : ''}
+              <p id="institute" class="S6" >${edu.institution}</p>
+              ${edu.duration !== '' ? `<p class="S5">[${edu.duration}]</p>` : ''}
           </div>
           <div class="idg">
-              <text class="subH" ><strong>Address:</strong></text>
-              <text class="S5" >${edu.address}</text>
+              <p class="subH" ><strong>Address:</strong></p>
+              <p class="S5" >${edu.address}</p>
           </div>
           <div class="idg">
-              <text class="subH" ><strong>Website:</strong></text>
-              <text class="link" >${edu.website}</text>
+              <p class="subH" ><strong>Website:</strong></p>
+              <p class="link" >${edu.website}</p>
           </div>
-          ${edu.addText1 !== '' && edu.addText1 !== undefined ? `<div class="high"><div class="BaddText">&#8226;</div><text class="addText" id="addText${index + 1}" >${edu.addText1}</text></div>` : ''}
-          ${edu.addText2 !== '' && edu.addText2 !== undefined ? `<div class="high"><div class="BaddText">&#8226;</div><text class="addText" id="addText${index + 2}" >${edu.addText2}</text></div>` : ''}
-          ${edu.addText3 !== ''&& edu.addText3 !== undefined  ? `<div class="high"><div class="BaddText">&#8226;</div><text class="addText" id="addText${index + 3}" >${edu.addText3}</text></div>` : ''}
+          ${edu.addText1 !== '' && edu.addText1 !== undefined ? `<div class="high"><div class="BaddText">&#8226;</div><p class="addText" id="addText${index + 1}" >${edu.addText1}</p></div>` : ''}
+          ${edu.addText2 !== '' && edu.addText2 !== undefined ? `<div class="high"><div class="BaddText">&#8226;</div><p class="addText" id="addText${index + 2}" >${edu.addText2}</p></div>` : ''}
+          ${edu.addText3 !== ''&& edu.addText3 !== undefined  ? `<div class="high"><div class="BaddText">&#8226;</div><p class="addText" id="addText${index + 3}" >${edu.addText3}</p></div>` : ''}
           <div class="forBold">
-          ${edu.addBold !== '' && edu.addBold !== undefined ? `<div class="forBold"><text id="Bold${index + 1}" class="subH" >${edu.addBold}</text></div>` : ''}
+          ${edu.addBold !== '' && edu.addBold !== undefined ? `<div class="forBold"><p id="Bold${index + 1}" class="subH" >${edu.addBold}</p></div>` : ''}
           </div>
           </div>`
          ).join('');
@@ -1861,13 +1861,13 @@ async function updateTemplate(from,type) {
 
       const JobHtml = workExperience.map((exp, index) => `
       <div id="Job" class="Job">
-        <text id="jobTitle" class="subH">${exp.jobTitle}</text>
+        <p id="jobTitle" class="subH">${exp.jobTitle}</p>
         <div id="idg">
-        <text id="institute" class="S6" >${exp.company}</text>
-        <text id="Duration" class="S5"  >[${exp.duration}]</text>
+        <p id="institute" class="S6" >${exp.company}</p>
+        <p id="Duration" class="S5"  >[${exp.duration}]</p>
         </div>
-        <div class="idg"><text class="subH" ><strong>Location:</strong> </text><text id="Country" class="S5">${exp.country}</text></div>
-        <text id="Description" class="S5">${exp.description}</text>
+        <div class="idg"><p class="subH" ><strong>Location:</strong> </p><p id="Country" class="S5">${exp.country}</p></div>
+        <p id="Description" class="S5">${exp.description}</p>
       </div>`
     ).join('');
    
@@ -1883,11 +1883,11 @@ async function updateTemplate(from,type) {
         const language = parts[0].trim();
         const proficiency = parts[1].replace(')', '').trim();
     
-        // Create the HTML structure with language and proficiency in separate <t> elements
+        // Create the HTML structure with language and proficiency in separate <p> elements
         return `
           <div id="idg", class="languageinside">
-            <t id="bold" class="subH" >${language}</t>
-            <t class="S5" id="divend">[${proficiency}]</t>
+            <p id="bold" class="subH" >${language}</p>
+            <p class="S5" id="divend">[${proficiency}]</p>
           </div>
         `;
        
@@ -1907,7 +1907,7 @@ async function updateTemplate(from,type) {
         // Check if the current skill is the last item in the array
         const isLastSkill = index === skills.length - 1;
       
-        // Create the HTML structure with or without the <text>/ </text> part based on the threshold
+        // Create the HTML structure with or without the <p>/ </p> part based on the threshold
         if (isLastSkill) {
           return `
             <div class="skill-box">
@@ -1970,10 +1970,10 @@ async function updateTemplate(from,type) {
           return `
           <div id="Proj" class="Proj">
               <div id="idg">
-                  <text id="jobTitle" class="subH">${pro.Title}</text>
-                  ${pro.duration !== '' ? `<text id="Duration" class="S5">[${pro.duration}]</text>` : ''}
+                  <p id="jobTitle" class="subH">${pro.Title}</p>
+                  ${pro.duration !== '' ? `<p id="Duration" class="S5">[${pro.duration}]</p>` : ''}
               </div>
-              <text id="Description" class="S5">${pro.description}</text>
+              <p id="Description" class="S5">${pro.description}</p>
           </div>
       `;
   
