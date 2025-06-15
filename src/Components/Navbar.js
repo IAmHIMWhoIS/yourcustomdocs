@@ -32,7 +32,7 @@ return (
      <h2 href="/" 
       onClick={(e) => {
       e.preventDefault();
-      window.location.href='/home';
+      window.location.href='/';
       }} 
      className = "SiteTitle">YourCustomDocs</h2>
             
